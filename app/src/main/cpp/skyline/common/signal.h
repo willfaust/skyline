@@ -14,7 +14,7 @@ namespace skyline::signal {
     class SignalException {
       public:
         int signal{};
-        u64 pc{};
+        void* pc{};
         void *fault{};
 
         inline std::string what() const {
