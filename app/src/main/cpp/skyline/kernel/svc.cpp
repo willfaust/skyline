@@ -542,7 +542,7 @@ namespace skyline::kernel::svc {
             switch (object->objectType) {
                 case type::KType::KEvent:
                 case type::KType::KProcess:
-                    state.ctx->gpr.w0 = std::static_pointer_cast<type::KSyncObject>(object)->ResetSignal() ? Result{} : result::InvalidState;
+//                    state.ctx->gpr.w0 = std::static_pointer_cast<type::KSyncObject>(object)->ResetSignal() ? Result{} : result::InvalidState;
                     break;
 
                 default: {
